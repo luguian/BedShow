@@ -12,6 +12,7 @@
     <color name="white">#ffffff</color>
     <color name="white_p">#dddddd</color>
     <color name="text_default_2">#222222</color>
+    <color name="text_default_9">#999999</color>
 
     <!-- 分割线颜色 -->
     <color name="divider">#cfcfcf</color>

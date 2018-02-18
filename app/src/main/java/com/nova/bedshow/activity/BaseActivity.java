@@ -43,13 +43,14 @@ public abstract class BaseActivity extends CheckPermissionsActivity {
         if (control) {
             activityCache.add(this);
         }
-        initview();
+
     }
 
 
     @Override
     protected void onResume(){
         super.onResume();
+        initview();
         initdata();
     }
     /**
