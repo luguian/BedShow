@@ -82,7 +82,7 @@ android {
     productFlavors.all{
         flavor ->
             flavor.manifestPlaceholders = [package_name    : "com.nova.bedshow",
-                                           URL             : "http://111.230.142.122:8080"]
+                                           URL             : "http://39.108.233.249"]
     }
 }
 

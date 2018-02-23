@@ -1,10 +1,259 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="这是我的页面"/>
+        android:fadingEdge="none"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        android:background="@color/activity_background">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_one"
+                android:layout_width="match_parent"
+                android:layout_height="85dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:background="@drawable/btn_default_white_selector">
+
+                <ImageView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_headimage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/iv_one_right"
+                    android:text="注册" />
+
+                <ImageView
+                    android:id="@+id/iv_one_right"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_member"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_member_vip"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="会员"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_recharge"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_recharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_recharge"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="充值"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_message"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_message"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="消息"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_purchase"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_purchase"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="已购买"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_follow"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_follow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_follow"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="已关注"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_collect"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_collect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_collect"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="已收藏"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_setting"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/btn_default_white_selector"
+                >
+
+                <TextView
+                    android:id="@+id/text_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_collect"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:drawablePadding="8dp"
+                    android:text="已收藏"/>
+
+                <ImageView
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/icon_rightarrow" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>

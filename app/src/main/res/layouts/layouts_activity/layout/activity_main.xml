@@ -6,11 +6,27 @@
     android:layout_height="match_parent"
     tools:context="com.nova.bedshow.activity.MainActivity">
 
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="我的"
+        android:gravity="center"
+        android:textSize="16dp"/>
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#CCCCCC"
+        android:layout_below="@id/text_title"/>
+
+
 
     <LinearLayout
         android:id="@+id/ll_main_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/view_line"
         android:orientation="vertical">
 
 

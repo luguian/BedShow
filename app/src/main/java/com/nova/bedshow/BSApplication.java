@@ -4,6 +4,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.support.multidex.MultiDexApplication;
 
+import com.nova.bedshow.dao.BaseDao;
 import com.nova.bedshow.utils.SystemUtil;
 
 /**
@@ -33,6 +34,8 @@ public class BSApplication extends MultiDexApplication {
         //初始化版本号
         initVersion();
         PROXY_SERVER_URL =  SystemUtil.getMetaDataString("URL");
+        F.APPLICATION = this;
+        new BaseDao(this).init();
 
 
     }
